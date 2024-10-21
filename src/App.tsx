@@ -4,7 +4,8 @@ import { Footer } from "./components/ui/layout/footer";
 import Home from "./components/pages/home";
 import Pets from "./components/pages/pets";
 import PetDetails from "./components/pages/petdetails";
-import Shelters from "./components/pages/shelterdetail";
+import Shelters from "./components/pages/shelter";
+import SheltersDetails from "./components/pages/shelterdetail";
 import About from "./components/pages/about";
 import { Register as Register } from "./components/pages/register";
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/pets" element={<Pets />} />
             <Route path="/pets/:id" element={<PetDetails />} />
             <Route path="/shelters" element={<Shelters />} />
+            <Route path="/shelters/:id" element={<SheltersDetails />} />
             <Route path="/about" element={<About />} />
             <Route path="/register" element={<Register />} />
           </Routes>

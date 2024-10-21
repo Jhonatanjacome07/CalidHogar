@@ -14,10 +14,10 @@ export default function PetDetails() {
 
   const pet = {
     id: petId,
-    name: "Luna",
+    name: "Bella",
     species: "Perro",
     age: 2,
-    breed: "Labrador",
+    breed: "Shih tzu",
     weight: "25 kg",
     size: "Mediano",
     activityLevel: "Alto",
@@ -25,12 +25,12 @@ export default function PetDetails() {
     sterilized: true,
     microchip: true,
     vaccinated: true,
-    history: "Luna fue rescatada de la calle hace 6 meses...",
-    mainImage: "/path-to-main-image.jpg",
+    history: "Bella fue rescatada de la calle hace 6 meses...",
+    mainImage: "/src/assets/dogs/bella/bella.jpg",
     previewImages: [
-      "/path-to-preview1.jpg",
-      "/path-to-preview2.jpg",
-      "/path-to-preview3.jpg",
+      "/src/assets/dogs/bella/bella.jpg",
+      "/src/assets/dogs/bella/bella1.jpg",
+      "/src/assets/dogs/bella/bella2.jpg",
     ],
     shelter: "Protectora Amigo Fiel",
   };
