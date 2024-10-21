@@ -44,18 +44,19 @@ plugins: [],
 }
 
 ### 4. Ejecuta el servidor de desarrollo:
+
 Una vez que todas las dependencias estén instaladas, inicia el servidor de desarrollo:
 npm run dev
 
 ## Estructura del Proyecto
-CalidHogar/
-├── public/         # Archivos públicos
-├── src/
-│   ├── assets/     # Archivos estáticos (imágenes, iconos)
-│   ├── components/ # Componentes reutilizables de React
-│   ├── pages/      # Páginas principales de la aplicación
-│   ├── routes/     # Rutas de navegación
-│   └── App.tsx     # Archivo principal de la aplicación
-├── tailwind.config.js # Configuración de Tailwind CSS
-└── package.json    # Dependencias y scripts
 
+CalidHogar/
+├── public/ # Archivos públicos
+├── src/
+│ ├── assets/ # Archivos estáticos (imágenes, iconos)
+│ ├── components/ # Componentes reutilizables de React
+│ ├── pages/ # Páginas principales de la aplicación
+│ ├── routes/ # Rutas de navegación
+│ └── App.tsx # Archivo principal de la aplicación
+├── tailwind.config.js # Configuración de Tailwind CSS
+└── package.json # Dependencias y scripts
