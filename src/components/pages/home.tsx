@@ -65,7 +65,7 @@ export default function Home() {
               <img
                 src="/src/assets/imghome/dog.jpg"
                 alt="Mascota feliz"
-                className="rounded-lg shadow-lg w-full max-w-[600px] h-auto aspect-square object-cover hover:scale-105 transition-transform duration-300 ml-auto"
+                className="rounded-lg shadow-lg w-full max-w-[600px] h-auto aspect-square object-cover hover:scale-105 transition-transform duration-300 ml-auto "
               />
             </motion.div>
           </div>
@@ -148,7 +148,7 @@ export default function Home() {
               <img
                 src="/src/assets/imghome/cat.jpg"
                 alt="Mascota feliz"
-                className="rounded-lg shadow-lg w-full max-w-[600px] h-auto aspect-square object-cover mb-0 hover:scale-105 transition-transform duration-300"
+                className="rounded-lg shadow-lg w-full max-w-[600px] h-auto aspect-square object-cover mb-0 hover:scale-105 transition-transform duration-300 mr-auto"
               />
             </div>
 
