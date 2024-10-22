@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 
 // Importa la imagen directamente
-import valoresImage from "@/assets/valores/valores.jpg"; // Ajusta la ruta según sea necesario
+import valoresImage from "@/assets/valores/valores.jpg";
 
 export default function About() {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
@@ -38,7 +38,9 @@ export default function About() {
             Sobre Nosotros
           </h1>
           <p className="text-lg text-sky-700 mb-4">
-            
+            Somos un apasionado grupo de desarrolladores que, en colaboración
+            con NoCountry, hemos creado este sitio web para facilitar la
+            adopción de mascotas y apoyar a los refugios en su noble labor.
           </p>
         </section>
 
@@ -89,7 +91,7 @@ export default function About() {
             </ul>
           </div>
           <motion.img
-            src={valoresImage} // Usa la imagen importada
+            src={valoresImage}
             alt="Valores"
             className="w-1/3 rounded-lg shadow-lg w-full max-w-[300px] ml-auto"
             whileHover={{ scale: 1.05 }}
