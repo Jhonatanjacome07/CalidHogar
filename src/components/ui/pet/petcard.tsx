@@ -5,7 +5,7 @@ import { TypeIcon, PawPrint, MapPin, Clock } from "lucide-react";
 type Pet = {
   id: number;
   name: string;
-  type: string;
+  species: string;
   breed: string;
   age: number;
   location: string;
@@ -32,7 +32,7 @@ export function PetCard({ pet }: { pet: Pet }) {
           <div className="flex items-center mb-1">
             <TypeIcon className="mr-2 text-gray-500" />
             <p className="text-sm font-normal text-gray-500 leading-5">
-              Tipo: {pet.type}
+              Tipo: {pet.species}
             </p>
           </div>
           <div className="flex items-center mb-1">
@@ -56,7 +56,6 @@ export function PetCard({ pet }: { pet: Pet }) {
           <div className="flex">
             <Link to={`/pets/${pet.id}`} className="w-full">
               <button className="border-[#00DAFE] text-[#00DAFE] hover:bg-[#00DAFE] hover:text-white transition-colors duration-300 text-lg rounded-full py-2 w-full font-semibold">
-                {" "}
                 Detalles
               </button>
             </Link>

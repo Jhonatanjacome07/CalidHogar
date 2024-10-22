@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { PetGrid } from "@/components/ui/pet/petgrid";
 import { Button } from "@/components/ui/button";
-// Importa los iconos necesarios de Lucide
 import { Tally4, Cat, Dog } from "lucide-react";
 
 type PetType = "all" | "cat" | "dog";
@@ -40,15 +39,6 @@ export default function Pets() {
         </div>
 
         <div className="mt-9">
-          {" "}
-          <PetGrid filter={filter} />
-        </div>
-
-        <div className="my-8 bg-gray-100 p-4 rounded-lg text-center">
-          <h2 className="text-2xl font-bold">¡Adopta y cambia una vida!</h2>
-        </div>
-        <div className="mt-9">
-          {" "}
           <PetGrid filter={filter} />
         </div>
       </div>
