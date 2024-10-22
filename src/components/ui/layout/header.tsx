@@ -33,7 +33,7 @@ export function Header() {
         <Link to="/" className="flex-shrink-0 flex items-center">
           <img
             className="h-20 w-auto md:mt-[-10px] "
-            src="/src/assets/logo/calidhoga.png"
+            src={logoImg}
             alt="CalidHogar"
           />
           <span className="ml-2 text-lg font-bold text-black hover:text-gray-500">
@@ -58,7 +58,7 @@ export function Header() {
           >
             <ul
               className="bg-gradient-to-b from-sky-700 to-transparent
-              text-black fixed top-0 left-0 w-2/4 h-full bg-customColor flex flex-col justify-center items-center space-y-4 z-50 shadow-md"
+              text-black fixed top-0 left-0 w-2/4 h-full bg-customColor flex flex-col justify-center items-center space-y-6 z-50 shadow-md"
             >
               <li>
                 <Link to="/" className="flex-shrink-0 flex items-center">
@@ -99,7 +99,7 @@ export function Header() {
                 <li key={index}>
                   <Link
                     to={path}
-                    className="block text-white text-lg flex items-center space-x-2 px-4 py-2"
+                    className="block text-white text-lg flex items-center space-x-4 px-4 py-4"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {icon}

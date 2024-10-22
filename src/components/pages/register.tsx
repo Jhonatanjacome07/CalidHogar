@@ -12,6 +12,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
+import logoImg from "@/assets/logo/calidhoga.png"; // Importa la imagen
 
 type FormData = {
   email: string;
@@ -50,10 +51,9 @@ export function Register() {
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-gray-50">
       <Card className="w-[400px] shadow-lg">
-        {/* Imagen sobre el formulario */}
         <div className="flex justify-center p-4">
           <img
-            src="/src/assets/logo/calidhoga.png"
+            src={logoImg}
             alt="Logo CalidHogar"
             className="h-40 w-1/2 object-contain"
           />
@@ -152,21 +152,13 @@ export function Register() {
         <CardFooter className="flex flex-col items-center">
           <Button
             type="submit"
-            className="w-full"
-            disabled={isLoading}
+            className="w-full bg-blue-500 hover:bg-blue-600 text-white"
             onClick={handleSubmit(onSubmit)}
+            disabled={isLoading}
           >
-            {isLoading ? "Creando cuenta..." : "Crear cuenta"}
+            {isLoading ? "Cargando..." : "Registrar"}
           </Button>
-          {message && (
-            <p
-              className={`mt-4 text-sm ${
-                message.startsWith("Error") ? "text-red-500" : "text-green-500"
-              }`}
-            >
-              {message}
-            </p>
-          )}
+          {message && <p className="mt-2 text-green-600">{message}</p>}
         </CardFooter>
       </Card>
     </div>

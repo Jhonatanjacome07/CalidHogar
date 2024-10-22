@@ -10,6 +10,8 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+// Asegúrate de importar la imagen
+import logoImg from "@/assets/logo/calidhoga.png";
 
 export function LoginModal({ onClose }) {
   const [email, setEmail] = useState("");
@@ -40,7 +42,7 @@ export function LoginModal({ onClose }) {
           <CardHeader className="flex flex-col items-center">
             <img
               className="h-auto w-15 mb-2 md:mt-[-95px]" // Ajuste de margen para pantallas grandes
-              src="/src/assets/logo/calidhoga.png"
+              src={logoImg}
               alt="CalidHogar"
             />
             <CardTitle className="text-center">Iniciar Sesión</CardTitle>
