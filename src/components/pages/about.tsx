@@ -69,7 +69,7 @@ export default function About() {
         </section>
 
         <section className="mb-12 flex items-center">
-          <div className="w-2/3 pr-4">
+          <div className="w-3/3 pr-4">
             <h2 className="text-3xl font-semibold text-sky-900 mb-4">
               Nuestros Valores
             </h2>
