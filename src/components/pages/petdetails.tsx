@@ -63,7 +63,7 @@ export default function PetDetails() {
           <img
             src={mainImage}
             alt={pet.name}
-            className="w-full h-auto rounded-lg shadow-lg"
+            className="w-[720px] h-[450px]  object-cover rounded-lg shadow-lg" 
           />
           <div className="grid grid-cols-3 gap-2 mt-4">
             {pet.previewImages.map((img, index) => (
@@ -71,8 +71,9 @@ export default function PetDetails() {
                 key={index}
                 src={img}
                 alt={`${pet.name} preview ${index + 1}`}
-                className="w-full h-24 object-cover rounded-md cursor-pointer" // cursor-pointer para indicar que se puede hacer clic
+                className="w-full h-24 object-cover rounded-md cursor-pointer" // Clase para tamaño fijo y comportamiento al hacer clic
                 onClick={() => handlePreviewClick(img)} // Manejar el clic en la imagen de vista previa
+                style={{ width: "100%", height: "6rem" }} // Establecer un tamaño fijo para las imágenes de vista previa
               />
             ))}
           </div>
