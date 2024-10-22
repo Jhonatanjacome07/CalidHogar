@@ -36,8 +36,8 @@ export default function About() {
           </h1>
           <p className="text-lg text-sky-700  mb-4">
             Somos un apasionado grupo de desarrolladores que, en colaboración
-            con Slack, hemos creado este sitio web para facilitar la adopción de
-            mascotas y apoyar a los refugios en su noble labor.
+            con NoCountry, hemos creado este sitio web para facilitar la
+            adopción de mascotas y apoyar a los refugios en su noble labor.
           </p>
         </section>
 
