@@ -91,7 +91,7 @@ export default function About() {
             </ul>
           </div>
           <motion.img
-            src={valoresImage} // Usa la imagen importada
+            src={valoresImage}
             alt="Valores"
             className="w-1/3 rounded-lg shadow-lg w-full max-w-[300px] ml-auto"
             whileHover={{ scale: 1.05 }}

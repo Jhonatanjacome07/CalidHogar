@@ -14,11 +14,11 @@ export const pets = [
         microchip: true,
         vaccinated: true,
         history: "Bella fue rescatada de la calle hace 6 meses...",
-        mainImage: "/src/assets/dogs/bella/bella.jpg",
+        mainImage: "/assets/dogs/bella/bella.jpg",
         previewImages: [
-            "/src/assets/dogs/bella/bella.jpg",
-            "/src/assets/dogs/bella/bella1.jpg",
-            "/src/assets/dogs/bella/bella2.jpg",
+            "/assets/dogs/bella/bella.jpg",
+            "/assets/dogs/bella/bella1.jpg",
+            "/assets/dogs/bella/bella2.jpg",
         ],
         shelter: "Protectora Amigo Fiel",
     },
@@ -37,11 +37,11 @@ export const pets = [
         microchip: false,
         vaccinated: true,
         history: "Max fue entregado por una familia que no podía cuidarlo.",
-        mainImage: "/src/assets/dogs/max/max.jpg",
+        mainImage: "/assets/dogs/max/max.jpg",
         previewImages: [
-            "/src/assets/dogs/max/max.jpg",
-            "/src/assets/dogs/max/max1.jpg",
-            "/src/assets/dogs/max/max2.jpg",
+            "/assets/dogs/max/max.jpg",
+            "/assets/dogs/max/max1.jpg",
+            "/assets/dogs/max/max2.jpg",
         ],
         shelter: "Refugio Huellitas",
     },
@@ -137,7 +137,7 @@ export const pets = [
         ],
         shelter: "Protectora de Animales de Santiago",
     },
-   
+
     {
         id: 23,
         name: "Milly",
