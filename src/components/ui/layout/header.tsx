@@ -58,7 +58,7 @@ export function Header() {
           >
             <ul
               className="bg-gradient-to-b from-sky-700 to-transparent
-              text-black fixed top-0 left-0 w-2/4 h-full bg-customColor flex flex-col justify-center items-center space-y-6 z-50 shadow-md"
+              text-black fixed top-0 left-0 w-3/4 h-full bg-customColor flex flex-col justify-center items-center space-y-6 z-50 shadow-md"
             >
               <li>
                 <Link to="/" className="flex-shrink-0 flex items-center">
