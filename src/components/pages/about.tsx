@@ -9,9 +9,6 @@ import {
   FaBook,
 } from "react-icons/fa";
 
-// Importa la imagen directamente
-import valoresImage from "@/assets/valores/valores.jpg";
-
 export default function About() {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
 
@@ -39,8 +36,17 @@ export default function About() {
           </h1>
           <p className="text-lg text-sky-700 mb-4">
             Somos un apasionado grupo de desarrolladores que, en colaboración
-            con NoCountry, hemos creado este sitio web para facilitar la
-            adopción de mascotas y apoyar a los refugios en su noble labor.
+            con NoCountry, hemos creado este sitio web con el objetivo de
+            facilitar la adopción de mascotas y apoyar a los refugios en su
+            noble labor. Nuestro compromiso es brindar una plataforma accesible
+            y amigable, donde las personas puedan encontrar a su compañero ideal
+            y, al mismo tiempo, ayudar a organizaciones que trabajan
+            incansablemente por el bienestar animal. A través de esta
+            iniciativa, buscamos sensibilizar a la comunidad sobre la
+            importancia de la adopción responsable y el cuidado de los animales.
+            Creemos firmemente que, juntos, podemos hacer una diferencia
+            significativa en la vida de muchas mascotas y de las personas que
+            las adoptan.
           </p>
         </section>
 
@@ -90,13 +96,6 @@ export default function About() {
               </li>
             </ul>
           </div>
-          <motion.img
-            src={valoresImage}
-            alt="Valores"
-            className="w-1/3 rounded-lg shadow-lg w-full max-w-[300px] ml-auto"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-          />
         </section>
 
         <section className="mb-12">
