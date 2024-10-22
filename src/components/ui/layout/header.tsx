@@ -10,8 +10,10 @@ import {
   UserPlus,
   UserRound,
   PawPrint,
-} from "lucide-react"; // Importar los iconos de Lucide
-import { LoginModal } from "@/components/pages/login"; //Importamos el modal de inicio de sesión
+} from "lucide-react";
+import { LoginModal } from "@/components/pages/login";
+// Importa la imagen directamente
+import logoImg from "@/assets/logo/calidhoga.png";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -62,7 +64,7 @@ export function Header() {
                 <Link to="/" className="flex-shrink-0 flex items-center">
                   <img
                     className="h-auto w-28 text-black"
-                    src="/src/assets/logo/calidhoga.png"
+                    src={logoImg}
                     alt="CalidHogar"
                   />
                 </Link>
