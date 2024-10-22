@@ -32,6 +32,7 @@ type Pet = {
 export default function PetDetails() {
   const { id } = useParams(); // Obtener el id de los parámetros de la URL
   const [pet, setPet] = useState<Pet | null>(null); // Estado para la mascota seleccionada
+  const [mainImage, setMainImage] = useState<string>(""); // Estado para la imagen principal
 
   useEffect(() => {
     const petId = id ? Number(id) : 0;
@@ -42,6 +43,7 @@ export default function PetDetails() {
     // Actualizar el estado si se encuentra la mascota
     if (selectedPet) {
       setPet(selectedPet);
+      setMainImage(selectedPet.mainImage); // Establecer la imagen principal al cargar
     }
   }, [id]);
 
@@ -49,12 +51,17 @@ export default function PetDetails() {
     return <p>Cargando detalles de la mascota...</p>;
   }
 
+  // Función para manejar el clic en las imágenes de vista previa
+  const handlePreviewClick = (img: string) => {
+    setMainImage(img);
+  };
+
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="grid md:grid-cols-2 gap-8">
         <div>
           <img
-            src={pet.mainImage}
+            src={mainImage}
             alt={pet.name}
             className="w-full h-auto rounded-lg shadow-lg"
           />
@@ -64,7 +71,8 @@ export default function PetDetails() {
                 key={index}
                 src={img}
                 alt={`${pet.name} preview ${index + 1}`}
-                className="w-full h-24 object-cover rounded-md"
+                className="w-full h-24 object-cover rounded-md cursor-pointer" // cursor-pointer para indicar que se puede hacer clic
+                onClick={() => handlePreviewClick(img)} // Manejar el clic en la imagen de vista previa
               />
             ))}
           </div>
