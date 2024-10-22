@@ -1,118 +1,32 @@
-import React from "react";
-import { ShelterCard } from "@/components/ui/shelter/sheltercard"; // Asegúrate de que la ruta sea correcta
-
-type Shelter = {
-  id: number;
-  name: string;
-  location: string;
-  image: string;
-};
-
-// Datos de refugios (puedes reemplazar estos datos por tus datos reales o una API)
-const shelters: Shelter[] = [
-  {
-    id: 1,
-    name: "Refugio Amigo",
-    location: "Madrid",
-    image: "/src/assets/shelters/shelter1.jpg",
-  },
-  {
-    id: 2,
-    name: "Casa de Animales",
-    location: "Barcelona",
-    image: "/src/assets/shelters/shelter2.jpg",
-  },
-  {
-    id: 3,
-    name: "Hogar de Mascotas",
-    location: "Valencia",
-    image: "/src/assets/shelters/shelter3.jpg",
-  },
-  {
-    id: 4,
-    name: "Refugio Feliz",
-    location: "Sevilla",
-    image: "/src/assets/shelters/shelter4.jpg",
-  },
-  {
-    id: 5,
-    name: "Centro de Rescate",
-    location: "Bilbao",
-    image: "/src/assets/shelters/shelter5.jpg",
-  },
-  {
-    id: 6,
-    name: "Santuario Animal",
-    location: "Granada",
-    image: "/src/assets/shelters/shelter6.jpg",
-  },
-  {
-    id: 7,
-    name: "Refugio Esperanza",
-    location: "Zaragoza",
-    image: "/src/assets/shelters/shelter7.jpg",
-  },
-  {
-    id: 8,
-    name: "Protección Animal",
-    location: "Málaga",
-    image: "/src/assets/shelters/shelter8.jpg",
-  },
-  {
-    id: 9,
-    name: "Refugio del Amor",
-    location: "Murcia",
-    image: "/src/assets/shelters/shelter9.jpg",
-  },
-  {
-    id: 10,
-    name: "Adopta un Amigo",
-    location: "Alicante",
-    image: "/src/assets/shelters/shelter10.jpg",
-  },
-  {
-    id: 11,
-    name: "Asociación Animal",
-    location: "Córdoba",
-    image: "/src/assets/shelters/shelter11.jpg",
-  },
-  {
-    id: 12,
-    name: "Hogar de Animales",
-    location: "Toledo",
-    image: "/src/assets/shelters/shelter12.jpg",
-  },
-  {
-    id: 13,
-    name: "Refugio de Patitas",
-    location: "Oviedo",
-    image: "/src/assets/shelters/shelter13.jpg",
-  },
-  {
-    id: 14,
-    name: "Centro de Acogida",
-    location: "Santander",
-    image: "/src/assets/shelters/shelter14.jpg",
-  },
-  {
-    id: 15,
-    name: "Refugio Vida",
-    location: "La Coruña",
-    image: "/src/assets/shelters/shelter15.jpg",
-  },
-  {
-    id: 16,
-    name: "Santuario de Peluditos",
-    location: "Vigo",
-    image: "/src/assets/shelters/shelter16.jpg",
-  },
-];
+import { shelterData } from "@/data/shelterData";
+import { ShelterCard } from "@/components/ui/shelter/sheltercard";
 
 export function ShelterGrid() {
+  // Obtener los primeros 12 refugios
+  const firstTwelveShelters = shelterData.slice(0, 12);
+
+  // Dividir en dos grupos de 6 refugios
+  const firstHalf = firstTwelveShelters.slice(0, 6);
+  const secondHalf = firstTwelveShelters.slice(6, 12);
+
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="grid grid-cols-4 gap-6">
-        {shelters.map((shelter) => (
+      {/* Primera sección de refugios */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        {firstHalf.map((shelter) => (
+          <ShelterCard key={shelter.id} shelter={shelter} />
+        ))}
+      </div>
+
+      {/* Banner de separación */}
+      <div className="bg-gray-200 text-center py-4 mb-8">
+        <h2 className="text-xl font-bold">¡Adopta y cambia una vida!</h2>
+        <p>Conoce más sobre nuestros refugios y adopta a tu mejor amigo.</p>
+      </div>
+
+      {/* Segunda sección de refugios */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {secondHalf.map((shelter) => (
           <ShelterCard key={shelter.id} shelter={shelter} />
         ))}
       </div>

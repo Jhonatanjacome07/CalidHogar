@@ -1,0 +1,133 @@
+export const shelterData = [
+    {
+        id: 1,
+        name: "Protectora Amigo Fiel",
+        location: "Calle Fiel, Ciudad de Buenos Aires",
+        casesInAdoption: 10,
+        urgentCases: 2,
+        fosterCases: 5,
+
+        story: "Fundada en 2010, esta protectora se dedica a rescatar y encontrar hogares para animales abandonados, ofreciendo amor y cuidado a cada uno de ellos.",
+        image: "url/a/la/imagen1.jpg",
+    },
+    {
+        id: 2,
+        name: "Refugio Huellitas",
+        location: "Av. Las Huellitas, Mendoza",
+        casesInAdoption: 15,
+        urgentCases: 1,
+        fosterCases: 3,
+
+        story: "Huellitas es un refugio que no solo se enfoca en la adopción, sino también en la educación sobre el bienestar animal en la comunidad.",
+        image: "url/a/la/imagen1.jpg",
+    },
+    {
+        id: 3,
+        name: "Refugio de Animales de Mendoza",
+        location: "Calle Esperanza, Mendoza",
+        casesInAdoption: 8,
+        urgentCases: 4,
+        fosterCases: 2,
+        story: "Con más de 20 años de experiencia, este refugio trabaja incansablemente para rescatar y rehabilitar animales en situación de calle.",
+        image: "url/a/la/imagen1.jpg",
+    },
+    {
+        id: 4,
+        name: "Protectora de Animales de Santiago",
+        location: "Calle Amor Animal, Santiago del Estero",
+        casesInAdoption: 12,
+        urgentCases: 3,
+        fosterCases: 4,
+
+        story: "La protectora se dedica a brindar refugio y atención médica a animales heridos y abandonados en la región.",
+        image: "url/a/la/imagen1.jpg",
+    },
+    {
+        id: 5,
+        name: "Refugio de Animales de Rosario",
+        location: "Calle Corazón, Rosario",
+        casesInAdoption: 20,
+        urgentCases: 5,
+        fosterCases: 1,
+
+        story: "Este refugio se esfuerza por rescatar a los animales de la calle y ofrecerles un hogar temporal mientras encuentran una familia permanente.",
+        image: "url/a/la/imagen1.jpg",
+    },
+    {
+        id: 6,
+        name: "Refugio de Animales de Córdoba",
+        location: "Calle Vida Animal, Córdoba",
+        casesInAdoption: 5,
+        urgentCases: 2,
+        fosterCases: 0,
+
+        story: "Con un enfoque en la adopción responsable, este refugio busca concientizar sobre la importancia de la tenencia responsable de mascotas.",
+        image: "url/a/la/imagen1.jpg",
+    },
+    {
+        id: 7,
+        name: "Protectora de Animales de La Plata",
+        location: "Calle Proteger, La Plata",
+        casesInAdoption: 11,
+        urgentCases: 3,
+        fosterCases: 6,
+
+        story: "Esta protectora trabaja arduamente para rescatar y reubicar a los animales en situaciones de riesgo.",
+        image: "url/a/la/imagen1.jpg",
+    },
+    {
+        id: 8,
+        name: "Refugio de Animales de Buenos Aires",
+        location: "Calle Animales Libres, Buenos Aires",
+        casesInAdoption: 14,
+        urgentCases: 2,
+        fosterCases: 5,
+
+        story: "Con un fuerte enfoque en la educación y sensibilización, este refugio se ha convertido en un pilar de la comunidad.",
+        image: "url/a/la/imagen1.jpg",
+    },
+    {
+        id: 9,
+        name: "Protectora de Animales de la Ciudad",
+        location: "Calle Esperanza, Ciudad Autónoma de Buenos Aires",
+        casesInAdoption: 7,
+        urgentCases: 1,
+        fosterCases: 2,
+
+        story: "Este refugio se dedica a cuidar y proteger a los animales abandonados y maltratados, proporcionando atención médica y amor.",
+        image: "url/a/la/imagen1.jpg",
+    },
+    {
+        id: 10,
+        name: "Mundo de Huellitas",
+        location: "Calle Esperanza, Ciudad Autónoma de Buenos Aires",
+        casesInAdoption: 7,
+        urgentCases: 1,
+        fosterCases: 2,
+
+        story: "Este refugio se dedica a cuidar y proteger a los animales abandonados y maltratados, proporcionando atención médica y amor.",
+        image: "url/a/la/imagen1.jpg",
+    },
+    {
+        id: 11,
+        name: "A salvo",
+        location: "Calle Esperanza, Ciudad Autónoma de Buenos Aires",
+        casesInAdoption: 7,
+        urgentCases: 1,
+        fosterCases: 2,
+
+        story: "Este refugio se dedica a cuidar y proteger a los animales abandonados y maltratados, proporcionando atención médica y amor.",
+        image: "url/a/la/imagen1.jpg",
+    },
+    {
+        id: 12,
+        name: "Tu hogar seguro",
+        location: "Calle Esperanza, Ciudad Autónoma de Buenos Aires",
+        casesInAdoption: 7,
+        urgentCases: 1,
+        fosterCases: 2,
+
+        story: "Este refugio se dedica a cuidar y proteger a los animales abandonados y maltratados, proporcionando atención médica y amor.",
+        image: "url/a/la/imagen1.jpg",
+    },
+];

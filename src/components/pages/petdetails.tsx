@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {
   Card,
@@ -6,61 +7,47 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { pets } from "@/data/petsData"; // Importa los datos desde el archivo
+
+// Definir el tipo para los detalles de una mascota
+type Pet = {
+  id: number;
+  name: string;
+  species: string;
+  age: number;
+  breed: string;
+  weight: string;
+  size: string;
+  activityLevel: string;
+  dewormed: boolean;
+  sterilized: boolean;
+  microchip: boolean;
+  vaccinated: boolean;
+  history: string;
+  mainImage: string;
+  previewImages: string[];
+  shelter: string;
+};
 
 export default function PetDetails() {
-  const { id } = useParams();
+  const { id } = useParams(); // Obtener el id de los parámetros de la URL
+  const [pet, setPet] = useState<Pet | null>(null); // Estado para la mascota seleccionada
 
-  const petId = id ? Number(id) : 0;
+  useEffect(() => {
+    const petId = id ? Number(id) : 0;
 
-  const pet = {
-    id: petId,
-    name: "Bella",
-    species: "Perro",
-    age: 2,
-    breed: "Shih tzu",
-    weight: "25 kg",
-    size: "Mediano",
-    activityLevel: "Alto",
-    dewormed: true,
-    sterilized: true,
-    microchip: true,
-    vaccinated: true,
-    history: "Bella fue rescatada de la calle hace 6 meses...",
-    mainImage: "/src/assets/dogs/bella/bella.jpg",
-    previewImages: [
-      "/src/assets/dogs/bella/bella.jpg",
-      "/src/assets/dogs/bella/bella1.jpg",
-      "/src/assets/dogs/bella/bella2.jpg",
-    ],
-    shelter: "Protectora Amigo Fiel",
-  };
+    // Buscar la mascota en el array de datos
+    const selectedPet = pets.find((p) => p.id === petId);
 
-  const otherPets = [
-    {
-      id: 1,
-      name: "Max",
-      species: "Perro",
-      image: "/path-to-otherpet1.jpg",
-    },
-    {
-      id: 2,
-      name: "Bella",
-      species: "Gato",
-      image: "/path-to-otherpet2.jpg",
-    },
-    {
-      id: 3,
-      name: "Charlie",
-      species: "Perro",
-      image: "/path-to-otherpet3.jpg",
-    },
-    {
-      id: 4,
-      name: "Lucy",
-      species: "Gato",
-      image: "/path-to-otherpet4.jpg",
-    },
-  ];
+    // Actualizar el estado si se encuentra la mascota
+    if (selectedPet) {
+      setPet(selectedPet);
+    }
+  }, [id]);
+
+  if (!pet) {
+    return <p>Cargando detalles de la mascota...</p>;
+  }
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -102,32 +89,10 @@ export default function PetDetails() {
             <h3 className="font-bold mt-4">Historia:</h3>
             <p>{pet.history}</p>
 
-            {/* Nueva sección para mostrar la protectora */}
             <h3 className="font-bold mt-4">Protectora:</h3>
             <p>{pet.shelter}</p>
           </CardContent>
         </Card>
-      </div>
-      <div className="mt-8 bg-gray-100 p-4 rounded-lg text-center">
-        <h2 className="text-2xl font-bold">
-          Otras mascotas que podrían interesarte
-        </h2>
-      </div>
-
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
-        {otherPets.map((otherPet) => (
-          <div key={otherPet.id} className="bg-white rounded-lg shadow-lg">
-            <img
-              src={otherPet.image}
-              alt={otherPet.name}
-              className="w-full h-40 object-cover rounded-t-lg"
-            />
-            <div className="p-4 text-center">
-              <h3 className="font-semibold">{otherPet.name}</h3>
-              <p className="text-gray-600">{otherPet.species}</p>
-            </div>
-          </div>
-        ))}
       </div>
     </div>
   );
