@@ -56,7 +56,7 @@ export function PetGrid({ filter }: { filter: PetType }) {
       </div>
 
       {/* Banner */}
-      <div className="my-8 p-4 bg-gray-300 text-center">
+      <div className="my-8 p-4 bg-[#FA9235] bg-opacity-75 rounded-lg text-center">
         <h2 className="text-2xl font-bold">¡Adopta una mascota hoy!</h2>
         <p className="mt-2">¡Haz una diferencia en la vida de un animal!</p>
       </div>
