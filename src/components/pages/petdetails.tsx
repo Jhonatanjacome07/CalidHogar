@@ -63,6 +63,7 @@ export default function PetDetails() {
           <img
             src={mainImage}
             alt={pet.name}
+            loading="lazy"
             className="w-[720px] h-[450px]  object-cover rounded-lg shadow-lg"
           />
           <div className="grid grid-cols-3 gap-2 mt-4">
@@ -70,6 +71,7 @@ export default function PetDetails() {
               <img
                 key={index}
                 src={img}
+                loading="lazy"
                 alt={`${pet.name} preview ${index + 1}`}
                 className="w-full h-24 object-cover rounded-md cursor-pointer" // Clase para tamaño fijo y comportamiento al hacer clic
                 onClick={() => handlePreviewClick(img)} // Manejar el clic en la imagen de vista previa

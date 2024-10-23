@@ -55,6 +55,7 @@ export function Register() {
           <img
             src={logoImg}
             alt="Logo CalidHogar"
+            loading="lazy"
             className="h-40 w-1/2 object-contain"
           />
         </div>

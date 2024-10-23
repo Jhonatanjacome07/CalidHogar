@@ -21,6 +21,7 @@ export function PetCard({ pet }: { pet: Pet }) {
             <img
               src={pet.image}
               alt={pet.name}
+              loading="lazy"
               className="w-full h-52 object-cover rounded-lg"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-70 rounded-lg" />

@@ -43,6 +43,7 @@ export function LoginModal({ onClose }) {
             <img
               className="h-auto w-15 mb-2 md:mt-[-95px]" // Ajuste de margen para pantallas grandes
               src={logoImg}
+              loading="lazy"
               alt="CalidHogar"
             />
             <CardTitle className="text-center">Iniciar Sesión</CardTitle>

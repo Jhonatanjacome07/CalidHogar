@@ -46,6 +46,7 @@ export default function ShelterDetails() {
           <img
             src={shelter.image}
             alt={shelter.name}
+            loading="lazy"
             className="w-[720px] h-[450px]  object-cover rounded-lg shadow-lg"
           />
         </div>

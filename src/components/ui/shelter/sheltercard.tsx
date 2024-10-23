@@ -18,6 +18,7 @@ export function ShelterCard({ shelter }: { shelter: Shelter }) {
             <img
               src={shelter.image}
               alt={shelter.name}
+              loading="lazy"
               className="w-1/3 h-full object-cover rounded-lg mr-4"
             />
             <div className="flex flex-col justify-between w-2/3">
