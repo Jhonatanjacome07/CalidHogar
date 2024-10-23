@@ -6,9 +6,8 @@ export const shelterData = [
         casesInAdoption: 10,
         urgentCases: 2,
         fosterCases: 5,
-
         story: "Fundada en 2010, esta protectora se dedica a rescatar y encontrar hogares para animales abandonados, ofreciendo amor y cuidado a cada uno de ellos.",
-        image: "url/a/la/imagen1.jpg",
+        image: "/assets/shelter/1/1.jpg",
     },
     {
         id: 2,
@@ -17,9 +16,8 @@ export const shelterData = [
         casesInAdoption: 15,
         urgentCases: 1,
         fosterCases: 3,
-
         story: "Huellitas es un refugio que no solo se enfoca en la adopción, sino también en la educación sobre el bienestar animal en la comunidad.",
-        image: "url/a/la/imagen1.jpg",
+        image: "/assets/shelter/2/2.jpg",
     },
     {
         id: 3,
@@ -29,7 +27,7 @@ export const shelterData = [
         urgentCases: 4,
         fosterCases: 2,
         story: "Con más de 20 años de experiencia, este refugio trabaja incansablemente para rescatar y rehabilitar animales en situación de calle.",
-        image: "url/a/la/imagen1.jpg",
+        image: "/assets/shelter/3/3.jpg",
     },
     {
         id: 4,
@@ -38,9 +36,8 @@ export const shelterData = [
         casesInAdoption: 12,
         urgentCases: 3,
         fosterCases: 4,
-
         story: "La protectora se dedica a brindar refugio y atención médica a animales heridos y abandonados en la región.",
-        image: "url/a/la/imagen1.jpg",
+        image: "/assets/shelter/4/4.jpg",
     },
     {
         id: 5,
@@ -49,9 +46,8 @@ export const shelterData = [
         casesInAdoption: 20,
         urgentCases: 5,
         fosterCases: 1,
-
         story: "Este refugio se esfuerza por rescatar a los animales de la calle y ofrecerles un hogar temporal mientras encuentran una familia permanente.",
-        image: "url/a/la/imagen1.jpg",
+        image: "/assets/shelter/5/5.jpg",
     },
     {
         id: 6,
@@ -60,9 +56,8 @@ export const shelterData = [
         casesInAdoption: 5,
         urgentCases: 2,
         fosterCases: 0,
-
         story: "Con un enfoque en la adopción responsable, este refugio busca concientizar sobre la importancia de la tenencia responsable de mascotas.",
-        image: "url/a/la/imagen1.jpg",
+        image: "/assets/shelter/6/6.jpg",
     },
     {
         id: 7,
@@ -71,9 +66,8 @@ export const shelterData = [
         casesInAdoption: 11,
         urgentCases: 3,
         fosterCases: 6,
-
         story: "Esta protectora trabaja arduamente para rescatar y reubicar a los animales en situaciones de riesgo.",
-        image: "url/a/la/imagen1.jpg",
+        image: "/assets/shelter/7/7.jpg",
     },
     {
         id: 8,
@@ -82,9 +76,8 @@ export const shelterData = [
         casesInAdoption: 14,
         urgentCases: 2,
         fosterCases: 5,
-
         story: "Con un fuerte enfoque en la educación y sensibilización, este refugio se ha convertido en un pilar de la comunidad.",
-        image: "url/a/la/imagen1.jpg",
+        image: "/assets/shelter/8/8.jpg",
     },
     {
         id: 9,
@@ -93,41 +86,37 @@ export const shelterData = [
         casesInAdoption: 7,
         urgentCases: 1,
         fosterCases: 2,
-
         story: "Este refugio se dedica a cuidar y proteger a los animales abandonados y maltratados, proporcionando atención médica y amor.",
-        image: "url/a/la/imagen1.jpg",
+        image: "/assets/shelter/9/9.jpg",
     },
     {
         id: 10,
         name: "Mundo de Huellitas",
-        location: "Calle Esperanza, Ciudad Autónoma de Buenos Aires",
+        location: "Calle Estatal, Ciudad Autónoma de Buenos Aires",
         casesInAdoption: 7,
         urgentCases: 1,
         fosterCases: 2,
-
         story: "Este refugio se dedica a cuidar y proteger a los animales abandonados y maltratados, proporcionando atención médica y amor.",
-        image: "url/a/la/imagen1.jpg",
+        image: "/assets/shelter/10/10.jpg",
     },
     {
         id: 11,
-        name: "A salvo",
-        location: "Calle Esperanza, Ciudad Autónoma de Buenos Aires",
+        name: "Patitas Callegeras Tabacundo",
+        location: "Calle Bolívar, Tabacundo, Pedro Moncayo",
         casesInAdoption: 7,
         urgentCases: 1,
         fosterCases: 2,
-
-        story: "Este refugio se dedica a cuidar y proteger a los animales abandonados y maltratados, proporcionando atención médica y amor.",
-        image: "url/a/la/imagen1.jpg",
+        story: "Grupo de voluntarios dispuestos a mejorar la situación de los perritos abandonados",
+        image: "/assets/shelter/11/11.jpg",
     },
     {
         id: 12,
         name: "Tu hogar seguro",
-        location: "Calle Esperanza, Ciudad Autónoma de Buenos Aires",
+        location: "Calle azuay, Ciudad Autónoma de Buenos Aires",
         casesInAdoption: 7,
         urgentCases: 1,
         fosterCases: 2,
-
         story: "Este refugio se dedica a cuidar y proteger a los animales abandonados y maltratados, proporcionando atención médica y amor.",
-        image: "url/a/la/imagen1.jpg",
+        image: "/assets/shelter/12/12.jpg",
     },
 ];

@@ -46,7 +46,7 @@ export default function ShelterDetails() {
           <img
             src={shelter.image}
             alt={shelter.name}
-            className="w-full h-auto rounded-lg shadow-lg"
+            className="w-[720px] h-[450px]  object-cover rounded-lg shadow-lg"
           />
         </div>
         <Card>

@@ -63,7 +63,7 @@ export default function PetDetails() {
           <img
             src={mainImage}
             alt={pet.name}
-            className="w-[720px] h-[450px]  object-cover rounded-lg shadow-lg" 
+            className="w-[720px] h-[450px]  object-cover rounded-lg shadow-lg"
           />
           <div className="grid grid-cols-3 gap-2 mt-4">
             {pet.previewImages.map((img, index) => (
