@@ -34,6 +34,7 @@ export function Header() {
           <img
             className="h-20 w-auto md:mt-[-10px] "
             src={logoImg}
+            loading="lazy"
             alt="CalidHogar"
           />
           <span className="ml-2 text-lg font-bold text-black hover:text-gray-500">
@@ -65,6 +66,7 @@ export function Header() {
                   <img
                     className="h-auto w-28 text-black"
                     src={logoImg}
+                    loading="lazy"
                     alt="CalidHogar"
                   />
                 </Link>
