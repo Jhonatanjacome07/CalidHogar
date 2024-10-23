@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import { LoginModal } from "@/components/pages/login";
 // Importa la imagen directamente
-import logoImg from "@/assets/logo/calidhoga.png";
+import logoImg from "@/assets/logo/calidhoga.webp";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -11,7 +11,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 // Asegúrate de importar la imagen
-import logoImg from "@/assets/logo/calidhoga.png";
+import logoImg from "@/assets/logo/calidhoga.webp";
 
 export function LoginModal({ onClose }) {
   const [email, setEmail] = useState("");

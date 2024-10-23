@@ -63,7 +63,7 @@ export default function Home() {
               className="md:w-1/2"
             >
               <img
-                src="/assets/imghome/dog.jpg"
+                src="/assets/imghome/dog.webp"
                 alt="Mascota feliz"
                 loading="lazy"
                 className="rounded-lg shadow-lg w-full max-w-[600px] h-auto aspect-square object-cover hover:scale-105 transition-transform duration-300 ml-auto "
@@ -147,7 +147,7 @@ export default function Home() {
             {/* Imagen a la izquierda */}
             <div className="md:w-1/2 mb-2 md:mb-0">
               <img
-                src="/assets/imghome/cat.jpg"
+                src="/assets/imghome/cat.webp"
                 alt="Mascota feliz"
                 loading="lazy" // Aquí aplicamos lazy loading
                 className="rounded-lg shadow-lg w-full max-w-[600px] h-auto aspect-square object-cover mb-0 hover:scale-105 transition-transform duration-300 mr-auto"

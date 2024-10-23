@@ -12,7 +12,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
-import logoImg from "@/assets/logo/calidhoga.png"; // Importa la imagen
+import logoImg from "@/assets/logo/calidhoga.webp"; // Importa la imagen
 
 type FormData = {
   email: string;
