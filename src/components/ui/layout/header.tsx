@@ -36,6 +36,8 @@ export function Header() {
             src={logoImg}
             loading="lazy"
             alt="CalidHogar"
+            width="200"
+            height="80"
           />
           <span className="ml-2 text-lg font-bold text-black hover:text-gray-500">
             Calid Hogar
@@ -68,6 +70,8 @@ export function Header() {
                     src={logoImg}
                     loading="lazy"
                     alt="CalidHogar"
+                    width="200"
+                    height="80"
                   />
                 </Link>
               </li>
