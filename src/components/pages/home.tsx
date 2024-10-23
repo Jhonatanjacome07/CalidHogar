@@ -65,6 +65,7 @@ export default function Home() {
               <img
                 src="/assets/imghome/dog.jpg"
                 alt="Mascota feliz"
+                loading="lazy"
                 className="rounded-lg shadow-lg w-full max-w-[600px] h-auto aspect-square object-cover hover:scale-105 transition-transform duration-300 ml-auto "
               />
             </motion.div>
@@ -148,6 +149,7 @@ export default function Home() {
               <img
                 src="/assets/imghome/cat.jpg"
                 alt="Mascota feliz"
+                loading="lazy" // Aquí aplicamos lazy loading
                 className="rounded-lg shadow-lg w-full max-w-[600px] h-auto aspect-square object-cover mb-0 hover:scale-105 transition-transform duration-300 mr-auto"
               />
             </div>
@@ -166,16 +168,18 @@ export default function Home() {
               </p>
               <ul className="list-disc list-inside text-left space-y-4">
                 <li className="flex items-center text-sky-700 text-lg">
-                  <Heart className="w-7 h-7 text-red-500 mr-2" />
-                  Amor incondicional garantizado.
+                  <Heart className="w-4 h-4 mr-2 text-[#00DAFE]" />
+                  Ofreces un hogar a un animal necesitado.
                 </li>
                 <li className="flex items-center text-sky-700 text-lg">
-                  <PawPrint className="w-7 h-7 text-green-500 mr-2" />
-                  Salvando una vida y dando una segunda oportunidad.
+                  <Heart className="w-4 h-4 mr-2 text-[#00DAFE]" />
+                  La mayoría de las mascotas adoptadas son esterilizadas y
+                  vacunadas.
                 </li>
                 <li className="flex items-center text-sky-700 text-lg">
-                  <Cat className="w-7 h-7 text-yellow-500 mr-2" />
-                  Mejora tu bienestar físico y emocional.
+                  <Heart className="w-4 h-4 mr-2 text-[#00DAFE]" />
+                  Promueves la adopción responsable y reduces el número de
+                  animales en refugios.
                 </li>
               </ul>
             </div>
