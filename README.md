@@ -47,3 +47,12 @@ plugins: [],
 
 Una vez que todas las dependencias estén instaladas, inicia el servidor de desarrollo:
 npm run dev
+
+## Cualquier consulta
+
+Puedes consultarnos a los siguientes canales de contacto:
+0939459669
+
+# Dirección del sitio web
+
+https://calidhogar.netlify.app/pets/1
