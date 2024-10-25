@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Header } from "./components/ui/layout/header";
-import { Footer } from "./components/ui/layout/Footer";
-import Home from "./components/pages/Home";
-import Pets from "./components/pages/Pets";
-import PetDetails from "./components/pages/PetDetails";
-import Shelters from "./components/pages/Shelter";
-import SheltersDetails from "./components/pages/ShelterDetail";
-import About from "./components/pages/About";
-import { Register as Register } from "./components/pages/Register";
+import { Footer } from "./components/ui/layout/footer";
+import Home from "./components/pages/home";
+import Pets from "./components/pages/pets";
+import PetDetails from "./components/pages/petdetails";
+import Shelters from "./components/pages/shelter";
+import SheltersDetails from "./components/pages/shelterdetail";
+import About from "./components/pages/about";
+import { Register as Register } from "./components/pages/register";
 
 function App() {
   return (

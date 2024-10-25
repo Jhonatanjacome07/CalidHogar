@@ -11,7 +11,7 @@ import {
   UserRound,
   PawPrint,
 } from "lucide-react";
-import { LoginModal } from "@/components/pages/Login";
+import { LoginModal } from "@/components/pages/login";
 // Importa la imagen directamente
 import logoImg from "@/assets/logo/calidhoga.webp";
 

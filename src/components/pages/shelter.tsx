@@ -1,4 +1,4 @@
-import { ShelterGrid } from "@/components/ui/shelter/ShelterGrid";
+import { ShelterGrid } from "@/components/ui/shelter/sheltergrid";
 
 export default function Shelter() {
   return (

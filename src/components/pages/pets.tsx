@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { PetGrid } from "@/components/ui/pet/PetGrid";
+import { PetGrid } from "@/components/ui/pet/petgrid";
 import { Button } from "@/components/ui/button";
 import { Tally4, Cat, Dog } from "lucide-react";
 

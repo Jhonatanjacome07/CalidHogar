@@ -1,4 +1,4 @@
-import { PetCard } from "@/components/ui/pet/PetCard";
+import { PetCard } from "@/components/ui/pet/petcard";
 import { pets as petsData } from "@/data/petsData";
 
 type PetType = "all" | "cat" | "dog";
