@@ -1,5 +1,5 @@
-import { PetCard } from "./petcard";
-import { pets as petsData } from "@/data/petsData"; // Importa los datos desde el archivo de datos
+import { PetCard } from "@/components/ui/pet/petcard";
+import { pets as petsData } from "@/data/petsData";
 
 type PetType = "all" | "cat" | "dog";
 

@@ -7,7 +7,7 @@ export const shelterData = [
         urgentCases: 2,
         fosterCases: 5,
         story: "Fundada en 2010, esta protectora se dedica a rescatar y encontrar hogares para animales abandonados, ofreciendo amor y cuidado a cada uno de ellos.",
-        image: "/assets/shelter/1/1.jpg",
+        image: "/assets/shelter/1/1.webp",
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ export const shelterData = [
         urgentCases: 1,
         fosterCases: 3,
         story: "Huellitas es un refugio que no solo se enfoca en la adopción, sino también en la educación sobre el bienestar animal en la comunidad.",
-        image: "/assets/shelter/2/2.jpg",
+        image: "/assets/shelter/2/2.webp",
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ export const shelterData = [
         urgentCases: 4,
         fosterCases: 2,
         story: "Con más de 20 años de experiencia, este refugio trabaja incansablemente para rescatar y rehabilitar animales en situación de calle.",
-        image: "/assets/shelter/3/3.jpg",
+        image: "/assets/shelter/3/3.webp",
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ export const shelterData = [
         urgentCases: 3,
         fosterCases: 4,
         story: "La protectora se dedica a brindar refugio y atención médica a animales heridos y abandonados en la región.",
-        image: "/assets/shelter/4/4.jpg",
+        image: "/assets/shelter/4/4.webp",
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ export const shelterData = [
         urgentCases: 5,
         fosterCases: 1,
         story: "Este refugio se esfuerza por rescatar a los animales de la calle y ofrecerles un hogar temporal mientras encuentran una familia permanente.",
-        image: "/assets/shelter/5/5.jpg",
+        image: "/assets/shelter/5/5.webp",
     },
     {
         id: 6,
@@ -57,7 +57,7 @@ export const shelterData = [
         urgentCases: 2,
         fosterCases: 0,
         story: "Con un enfoque en la adopción responsable, este refugio busca concientizar sobre la importancia de la tenencia responsable de mascotas.",
-        image: "/assets/shelter/6/6.jpg",
+        image: "/assets/shelter/6/6.webp",
     },
     {
         id: 7,
@@ -67,7 +67,7 @@ export const shelterData = [
         urgentCases: 3,
         fosterCases: 6,
         story: "Esta protectora trabaja arduamente para rescatar y reubicar a los animales en situaciones de riesgo.",
-        image: "/assets/shelter/7/7.jpg",
+        image: "/assets/shelter/7/7.webp",
     },
     {
         id: 8,
@@ -77,7 +77,7 @@ export const shelterData = [
         urgentCases: 2,
         fosterCases: 5,
         story: "Con un fuerte enfoque en la educación y sensibilización, este refugio se ha convertido en un pilar de la comunidad.",
-        image: "/assets/shelter/8/8.jpg",
+        image: "/assets/shelter/8/8.webp",
     },
     {
         id: 9,
@@ -87,7 +87,7 @@ export const shelterData = [
         urgentCases: 1,
         fosterCases: 2,
         story: "Este refugio se dedica a cuidar y proteger a los animales abandonados y maltratados, proporcionando atención médica y amor.",
-        image: "/assets/shelter/9/9.jpg",
+        image: "/assets/shelter/9/9.webp",
     },
     {
         id: 10,
@@ -97,7 +97,7 @@ export const shelterData = [
         urgentCases: 1,
         fosterCases: 2,
         story: "Este refugio se dedica a cuidar y proteger a los animales abandonados y maltratados, proporcionando atención médica y amor.",
-        image: "/assets/shelter/10/10.jpg",
+        image: "/assets/shelter/10/10.webp",
     },
     {
         id: 11,
@@ -107,7 +107,7 @@ export const shelterData = [
         urgentCases: 1,
         fosterCases: 2,
         story: "Grupo de voluntarios dispuestos a mejorar la situación de los perritos abandonados",
-        image: "/assets/shelter/11/11.jpg",
+        image: "/assets/shelter/11/11.webp",
     },
     {
         id: 12,
@@ -117,6 +117,6 @@ export const shelterData = [
         urgentCases: 1,
         fosterCases: 2,
         story: "Este refugio se dedica a cuidar y proteger a los animales abandonados y maltratados, proporcionando atención médica y amor.",
-        image: "/assets/shelter/12/12.jpg",
+        image: "/assets/shelter/12/12.webp",
     },
 ];
