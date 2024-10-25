@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Heart, House, PawPrint, Cat } from "lucide-react";
+import { Heart, House, PawPrint, Cat, HelpCircle } from "lucide-react";
 
 export default function Home() {
   return (
@@ -34,12 +34,12 @@ export default function Home() {
               {/* Botones con íconos */}
               <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
                 <Button
-                  className="bg-[#00DAFE] hover:bg-sky-600 transition-colors duration-300 flex items-center space-x-2 py-3 px-6 text-lg"
+                  className="bg-[#00DAFE] hover:bg-sky-400 transition-colors duration-300 flex items-center space-x-2 py-3 px-6 text-lg"
                   asChild
                 >
                   <Link to="/register">
-                    <PawPrint className="w-5 h-5" />
-                    <span>Registrarse</span>
+                    <PawPrint className="w-5 h-5 font-bold text-sky-700" />
+                    <span className="font-bold text-sky-700">Registrarse</span>
                   </Link>
                 </Button>
                 <Button
@@ -48,8 +48,8 @@ export default function Home() {
                   asChild
                 >
                   <Link to="/pets">
-                    <Cat className="w-5 h-5" />
-                    <span>Adopta ahora</span>
+                    <Cat className="w-5 h-5 font-bold text-sky-700" />
+                    <span className="font-bold text-sky-700">Adopta ahora</span>
                   </Link>
                 </Button>
               </div>
@@ -66,7 +66,9 @@ export default function Home() {
                 src="/assets/imghome/dog.webp"
                 alt="Mascota feliz"
                 loading="lazy"
-                className="rounded-lg shadow-lg w-full max-w-[600px] h-auto aspect-square object-cover hover:scale-105 transition-transform duration-300 ml-auto "
+                width="600" // Añadir ancho
+                height="600" // Añadir altura
+                className="rounded-lg shadow-lg w-full max-w-[600px] h-auto aspect-square object-cover hover:scale-105 transition-transform duration-300 ml-auto"
               />
             </motion.div>
           </div>
@@ -150,6 +152,8 @@ export default function Home() {
                 src="/assets/imghome/cat.webp"
                 alt="Mascota feliz"
                 loading="lazy" // Aquí aplicamos lazy loading
+                width="10" // Añadir ancho
+                height="300" // Añadir altura
                 className="rounded-lg shadow-lg w-full max-w-[600px] h-auto aspect-square object-cover mb-0 hover:scale-105 transition-transform duration-300 mr-auto"
               />
             </div>
@@ -163,23 +167,25 @@ export default function Home() {
               <p className="text-lg text-sky-700 mb-4">
                 Adoptar una mascota no solo cambia su vida, sino también la
                 tuya. Descubre el amor incondicional y la alegría que una
-                mascota adoptada puede traer a tu hogar. Aquí te mostramos
-                algunos de los beneficios de adoptar:
+                mascota puede traer a tu hogar.
               </p>
-              <ul className="list-disc list-inside text-left space-y-4">
-                <li className="flex items-center text-sky-700 text-lg">
-                  <Heart className="w-4 h-4 mr-2 text-[#00DAFE]" />
-                  Ofreces un hogar a un animal necesitado.
+
+              <ul className="list-disc list-inside text-lg text-sky-500 space-y-2">
+                <li className="flex items-center">
+                  <PawPrint className="w-5 h-5 font-bold text-sky-700 mr-2" />
+                  Contribuyes a la reducción de la sobrepoblación animal.
                 </li>
-                <li className="flex items-center text-sky-700 text-lg">
-                  <Heart className="w-4 h-4 mr-2 text-[#00DAFE]" />
-                  La mayoría de las mascotas adoptadas son esterilizadas y
-                  vacunadas.
+                <li className="flex items-center">
+                  <Heart className="w-5 h-5 font-bold text-sky-700 mr-2" />
+                  Obtienes un compañero leal y amoroso.
                 </li>
-                <li className="flex items-center text-sky-700 text-lg">
-                  <Heart className="w-4 h-4 mr-2 text-[#00DAFE]" />
-                  Promueves la adopción responsable y reduces el número de
-                  animales en refugios.
+                <li className="flex items-center">
+                  <House className="w-5 h-5 font-bold text-sky-700 mr-2" />
+                  Abres espacio en refugios para más animales necesitados.
+                </li>
+                <li className="flex items-center">
+                  <HelpCircle className="w-5 h-5 font-bold text-sky-700 mr-2" />
+                  Apoyas a organizaciones que luchan por el bienestar animal.
                 </li>
               </ul>
             </div>
