@@ -1,5 +1,5 @@
 import { shelterData } from "@/data/shelterData";
-import { ShelterCard } from "@/components/ui/shelter/sheltercard";
+import { ShelterCard } from "@/components/ui/shelter/ShelterCard";
 
 export function ShelterGrid() {
   const firstTwelveShelters = shelterData.slice(0, 12);
