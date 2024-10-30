@@ -45,6 +45,7 @@ export function Footer() {
               </a>
             </li>
             <li>
+              {/* Corrección de la ruta */}
               <a href="/pets" className=" font-semibold hover:text-gray-500">
                 Mascotas
               </a>
