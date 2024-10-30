@@ -49,6 +49,7 @@ export function Footer() {
                 Mascotas
               </a>
             </li>
+            {/* Corrección del link */}
             <li>
               <a href="/shelters" className="font-semibold hover:text-gray-500">
                 Refugios
