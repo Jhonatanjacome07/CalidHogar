@@ -12,7 +12,7 @@ export function ShelterCard({ shelter }: { shelter: Shelter }) {
   return (
     <div className="w-[280px] h-[200px]">
       <div className="relative group h-full">
-        <div className="absolute -inset-1 bg-gradient-to-r from-[#00DAFE] to-[#00DAFE] rounded-lg blur opacity-40 group-hover:opacity-60 transition duration-1000 group-hover:duration-200"></div>
+        <div className="absolute -inset-1 bg-gradient-to-r from-[#D6D144] to-[#D6D144] rounded-lg blur opacity-40 group-hover:opacity-60 transition duration-1000 group-hover:duration-200"></div>
         <div className="relative px-4 py-4 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex flex-col h-full">
           <div className="flex flex-row h-24 mb-2">
             <img
@@ -38,7 +38,7 @@ export function ShelterCard({ shelter }: { shelter: Shelter }) {
           </div>
           <div className="flex mt-auto">
             <Link to={`/shelters/${shelter.id}`} className="w-full">
-              <button className="border border-[#00DAFE] text-[#00DAFE] hover:bg-[#00DAFE] hover:text-white transition-colors duration-300 text-lg rounded-full py-2 w-full font-semibold">
+              <button className="border border-[#D6D144] text-[#D6D144] hover:bg-[#D6D144] hover:text-white transition-colors duration-300 text-lg rounded-full py-2 w-full font-semibold">
                 Detalles
               </button>
             </Link>

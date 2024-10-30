@@ -17,7 +17,7 @@ export function ShelterGrid() {
       </div>
 
       {/* Banner de separación ajustado */}
-      <div className="bg-[#FA9235] bg-opacity-75 text-center rounded-lg py-4 mb-8 max-w-screen-md mx-auto">
+      <div className="bg-[#D6D144] bg-opacity-75 text-center rounded-lg py-4 mb-8 max-w-screen-md mx-auto">
         <h2 className="text-xl font-bold">¡Adopta y cambia una vida!</h2>
         <p>Conoce más sobre nuestros refugios y adopta a tu mejor amigo.</p>
       </div>
