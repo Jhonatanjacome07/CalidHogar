@@ -40,31 +40,33 @@ export default function ShelterDetails() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="grid md:grid-cols-2 gap-8">
-        <div>
-          <img
-            src={shelter.image}
-            alt={shelter.name}
-            loading="lazy"
-            className="w-[720px] h-[450px]  object-cover rounded-lg shadow-lg"
-          />
+    <>
+      <div className="container mx-auto px-4 py-8">
+        <div className="grid md:grid-cols-2 gap-8">
+          <div>
+            <img
+              src={shelter.image}
+              alt={shelter.name}
+              loading="lazy"
+              className="w-[720px] h-[450px]  object-cover rounded-lg shadow-lg"
+            />
+          </div>
+          <Card>
+            <CardHeader>
+              <CardTitle>{shelter.name}</CardTitle>
+              <CardDescription>Detalles del refugio</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p>Ubicación: {shelter.location}</p>
+              <p>Casos en adopción: {shelter.casesInAdoption}</p>
+              <p>Casos urgentes: {shelter.urgentCases}</p>
+              <p>Casos en acogida: {shelter.fosterCases}</p>
+              <h3 className="font-bold mt-4">Historia:</h3>
+              <p>{shelter.story}</p>
+            </CardContent>
+          </Card>
         </div>
-        <Card>
-          <CardHeader>
-            <CardTitle>{shelter.name}</CardTitle>
-            <CardDescription>Detalles del refugio</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p>Ubicación: {shelter.location}</p>
-            <p>Casos en adopción: {shelter.casesInAdoption}</p>
-            <p>Casos urgentes: {shelter.urgentCases}</p>
-            <p>Casos en acogida: {shelter.fosterCases}</p>
-            <h3 className="font-bold mt-4">Historia:</h3>
-            <p>{shelter.story}</p>
-          </CardContent>
-        </Card>
       </div>
-    </div>
+    </>
   );
 }

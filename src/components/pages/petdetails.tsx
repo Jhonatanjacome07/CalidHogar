@@ -57,54 +57,56 @@ export default function PetDetails() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="grid md:grid-cols-2 gap-8">
-        <div>
-          <img
-            src={mainImage}
-            alt={pet.name}
-            loading="lazy"
-            className="w-[720px] h-[450px]  object-cover rounded-lg shadow-lg"
-          />
-          <div className="grid grid-cols-3 gap-2 mt-4">
-            {pet.previewImages.map((img, index) => (
-              <img
-                key={index}
-                src={img}
-                loading="lazy"
-                alt={`${pet.name} preview ${index + 1}`}
-                className="w-full h-24 object-cover rounded-md cursor-pointer" // Clase para tamaño fijo y comportamiento al hacer clic
-                onClick={() => handlePreviewClick(img)} // Manejar el clic en la imagen de vista previa
-                style={{ width: "100%", height: "6rem" }} // Establecer un tamaño fijo para las imágenes de vista previa
-              />
-            ))}
+    <>
+      <div className="container mx-auto px-4 py-8">
+        <div className="grid md:grid-cols-2 gap-8">
+          <div>
+            <img
+              src={mainImage}
+              alt={pet.name}
+              loading="lazy"
+              className="w-[720px] h-[450px]  object-cover rounded-lg shadow-lg"
+            />
+            <div className="grid grid-cols-3 gap-2 mt-4">
+              {pet.previewImages.map((img, index) => (
+                <img
+                  key={index}
+                  src={img}
+                  loading="lazy"
+                  alt={`${pet.name} preview ${index + 1}`}
+                  className="w-full h-24 object-cover rounded-md cursor-pointer" // Clase para tamaño fijo y comportamiento al hacer clic
+                  onClick={() => handlePreviewClick(img)} // Manejar el clic en la imagen de vista previa
+                  style={{ width: "100%", height: "6rem" }} // Establecer un tamaño fijo para las imágenes de vista previa
+                />
+              ))}
+            </div>
           </div>
-        </div>
-        <Card>
-          <CardHeader>
-            <CardTitle>{pet.name}</CardTitle>
-            <CardDescription>Detalles de la mascota</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p>Especie: {pet.species}</p>
-            <p>Edad: {pet.age} años</p>
-            <p>Raza: {pet.breed}</p>
-            <p>Peso: {pet.weight}</p>
-            <p>Tamaño: {pet.size}</p>
-            <p>Nivel de actividad: {pet.activityLevel}</p>
-            <h3 className="font-bold mt-4">Detalles de entrega:</h3>
-            <p>Desparasitado: {pet.dewormed ? "Sí" : "No"}</p>
-            <p>Esterilizado: {pet.sterilized ? "Sí" : "No"}</p>
-            <p>Microchip: {pet.microchip ? "Sí" : "No"}</p>
-            <p>Vacunas: {pet.vaccinated ? "Al día" : "Pendiente"}</p>
-            <h3 className="font-bold mt-4">Historia:</h3>
-            <p>{pet.history}</p>
+          <Card>
+            <CardHeader>
+              <CardTitle>{pet.name}</CardTitle>
+              <CardDescription>Detalles de la mascota</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p>Especie: {pet.species}</p>
+              <p>Edad: {pet.age} años</p>
+              <p>Raza: {pet.breed}</p>
+              <p>Peso: {pet.weight}</p>
+              <p>Tamaño: {pet.size}</p>
+              <p>Nivel de actividad: {pet.activityLevel}</p>
+              <h3 className="font-bold mt-4">Detalles de entrega:</h3>
+              <p>Desparasitado: {pet.dewormed ? "Sí" : "No"}</p>
+              <p>Esterilizado: {pet.sterilized ? "Sí" : "No"}</p>
+              <p>Microchip: {pet.microchip ? "Sí" : "No"}</p>
+              <p>Vacunas: {pet.vaccinated ? "Al día" : "Pendiente"}</p>
+              <h3 className="font-bold mt-4">Historia:</h3>
+              <p>{pet.history}</p>
 
-            <h3 className="font-bold mt-4">Protectora:</h3>
-            <p>{pet.shelter}</p>
-          </CardContent>
-        </Card>
+              <h3 className="font-bold mt-4">Protectora:</h3>
+              <p>{pet.shelter}</p>
+            </CardContent>
+          </Card>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

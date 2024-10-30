@@ -28,6 +28,7 @@ export function Header() {
 
   return (
     //<header className="bg-blue-700 text-white sticky top-0 z-50 shadow-md">
+
     <header className=" relative bg-gradient-to-b from-customColor to-transparent text-white sticky top-0 z-50 shadow-md">
       <nav className="container mx-auto px-4  flex justify-between items-center">
         <Link to="/" className="flex-shrink-0 flex items-center">

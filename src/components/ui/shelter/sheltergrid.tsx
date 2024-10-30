@@ -8,26 +8,28 @@ export function ShelterGrid() {
   const secondHalf = firstTwelveShelters.slice(6, 12);
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      {/* Primera sección de refugios */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 justify-items-center">
-        {firstHalf.map((shelter) => (
-          <ShelterCard key={shelter.id} shelter={shelter} />
-        ))}
-      </div>
+    <>
+      <div className="container mx-auto px-4 py-8">
+        {/* Primera sección de refugios */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 justify-items-center">
+          {firstHalf.map((shelter) => (
+            <ShelterCard key={shelter.id} shelter={shelter} />
+          ))}
+        </div>
 
-      {/* Banner de separación ajustado */}
-      <div className="bg-[#D6D144] bg-opacity-75 text-center rounded-lg py-4 mb-8 max-w-screen-md mx-auto">
-        <h2 className="text-xl font-bold">¡Adopta y cambia una vida!</h2>
-        <p>Conoce más sobre nuestros refugios y adopta a tu mejor amigo.</p>
-      </div>
+        {/* Banner de separación ajustado */}
+        <div className="bg-[#D6D144] bg-opacity-75 text-center rounded-lg py-4 mb-8 max-w-screen-md mx-auto">
+          <h2 className="text-xl font-bold">¡Adopta y cambia una vida!</h2>
+          <p>Conoce más sobre nuestros refugios y adopta a tu mejor amigo.</p>
+        </div>
 
-      {/* Segunda sección de refugios */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
-        {secondHalf.map((shelter) => (
-          <ShelterCard key={shelter.id} shelter={shelter} />
-        ))}
+        {/* Segunda sección de refugios */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+          {secondHalf.map((shelter) => (
+            <ShelterCard key={shelter.id} shelter={shelter} />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }

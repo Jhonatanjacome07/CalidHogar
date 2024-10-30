@@ -28,126 +28,130 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen bg-radial-gradient from-[#00DAFE] to-white">
-      <main className="container mx-auto px-4 py-12">
-        <section className="mb-12">
-          <h1 className="text-4xl mb-6 text-center font-bold text-sky-900">
-            Sobre Nosotros
-          </h1>
-          <p className="text-lg text-sky-700 mb-4">
-            Somos un apasionado grupo de desarrolladores que, en colaboración
-            con NoCountry, hemos creado este sitio web con el objetivo de
-            facilitar la adopción de mascotas y apoyar a los refugios en su
-            noble labor. Nuestro compromiso es brindar una plataforma accesible
-            y amigable, donde las personas puedan encontrar a su compañero ideal
-            y, al mismo tiempo, ayudar a organizaciones que trabajan
-            incansablemente por el bienestar animal. A través de esta
-            iniciativa, buscamos sensibilizar a la comunidad sobre la
-            importancia de la adopción responsable y el cuidado de los animales.
-            Creemos firmemente que, juntos, podemos hacer una diferencia
-            significativa en la vida de muchas mascotas y de las personas que
-            las adoptan.
-          </p>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-3xl font-semibold text-sky-900 mb-4">
-            Misión y Visión
-          </h2>
-          <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-lg border-2 border-[#00DAFE] hover:border-[#0097B2] transition duration-300 ease-in-out">
+    <>
+      <div className="min-h-screen bg-radial-gradient from-[#00DAFE] to-white">
+        <main className="container mx-auto px-4 py-12">
+          <section className="mb-12">
+            <h1 className="text-4xl mb-6 text-center font-bold text-sky-900">
+              Sobre Nosotros
+            </h1>
             <p className="text-lg text-sky-700 mb-4">
-              <strong>Misión:</strong> Conectar a mascotas necesitadas con
-              familias amorosas, utilizando tecnología innovadora para
-              simplificar el proceso de adopción.
+              Somos un apasionado grupo de desarrolladores que, en colaboración
+              con NoCountry, hemos creado este sitio web con el objetivo de
+              facilitar la adopción de mascotas y apoyar a los refugios en su
+              noble labor. Nuestro compromiso es brindar una plataforma
+              accesible y amigable, donde las personas puedan encontrar a su
+              compañero ideal y, al mismo tiempo, ayudar a organizaciones que
+              trabajan incansablemente por el bienestar animal. A través de esta
+              iniciativa, buscamos sensibilizar a la comunidad sobre la
+              importancia de la adopción responsable y el cuidado de los
+              animales. Creemos firmemente que, juntos, podemos hacer una
+              diferencia significativa en la vida de muchas mascotas y de las
+              personas que las adoptan.
             </p>
-            <p className="text-lg text-sky-700 mb-4">
-              <strong>Visión:</strong> Crear un mundo donde cada mascota tenga
-              un hogar y cada familia pueda experimentar la alegría de tener una
-              mascota.
-            </p>
-          </div>
-        </section>
+          </section>
 
-        <section className="mb-12 flex items-center">
-          <div className="w-3/3 pr-4">
+          <section className="mb-12">
             <h2 className="text-3xl font-semibold text-sky-900 mb-4">
-              Nuestros Valores
+              Misión y Visión
             </h2>
-            <ul className="list-disc list-inside">
-              <li className="flex items-center text-lg text-sky-700 mb-4">
-                <FaPaw className="mr-2 text-[#00DAFE]" /> Compasión por los
-                animales
-              </li>
-              <li className="flex items-center text-lg text-sky-700 mb-4">
-                <FaLightbulb className="mr-2 text-[#00DAFE]" /> Innovación
-                tecnológica
-              </li>
-              <li className="flex items-center text-lg text-sky-700 mb-4">
-                <FaEye className="mr-2 text-[#00DAFE]" /> Transparencia en
-                nuestras operaciones
-              </li>
-              <li className="flex items-center text-lg text-sky-700 mb-4">
-                <FaHandsHelping className="mr-2 text-[#00DAFE]" /> Colaboración
-                con refugios y comunidades
-              </li>
-              <li className="flex items-center text-lg text-sky-700 mb-4">
-                <FaBook className="mr-2 text-[#00DAFE]" /> Educación sobre la
-                tenencia responsable de mascotas
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-3xl font-semibold text-sky-900 mb-4">
-            Testimonios
-          </h2>
-          <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-lg border-2 border-[#00DAFE] hover:border-[#0097B2] transition duration-300 ease-in-out">
-            <p className="mb-4 italic text-center text-lg text-sky-700 mb-4">
-              "{testimonials[activeTestimonial].text}"
-            </p>
-            <p className="font-semibold text-center text-lg text-sky-700 mb-4">
-              - {testimonials[activeTestimonial].name}
-            </p>
-            <div className="mt-4 flex justify-center space-x-2">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  className={`w-3 h-3 rounded-full ${
-                    index === activeTestimonial ? "bg-[#00DAFE]" : "bg-gray-300"
-                  }`}
-                  onClick={() => setActiveTestimonial(index)}
-                />
-              ))}
+            <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-lg border-2 border-[#00DAFE] hover:border-[#0097B2] transition duration-300 ease-in-out">
+              <p className="text-lg text-sky-700 mb-4">
+                <strong>Misión:</strong> Conectar a mascotas necesitadas con
+                familias amorosas, utilizando tecnología innovadora para
+                simplificar el proceso de adopción.
+              </p>
+              <p className="text-lg text-sky-700 mb-4">
+                <strong>Visión:</strong> Crear un mundo donde cada mascota tenga
+                un hogar y cada familia pueda experimentar la alegría de tener
+                una mascota.
+              </p>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section className="mb-12">
-          <h2 className="text-3xl font-semibold font-semibold text-sky-900 mb-4">
-            Compromiso Social
-          </h2>
-          <p className="text-lg text-sky-700 mb-4">
-            Además de facilitar adopciones, trabajamos activamente en programas
-            de educación sobre tenencia responsable de mascotas y colaboramos
-            con refugios locales para mejorar las condiciones de vida de los
-            animales.
-          </p>
-        </section>
+          <section className="mb-12 flex items-center">
+            <div className="w-3/3 pr-4">
+              <h2 className="text-3xl font-semibold text-sky-900 mb-4">
+                Nuestros Valores
+              </h2>
+              <ul className="list-disc list-inside">
+                <li className="flex items-center text-lg text-sky-700 mb-4">
+                  <FaPaw className="mr-2 text-[#00DAFE]" /> Compasión por los
+                  animales
+                </li>
+                <li className="flex items-center text-lg text-sky-700 mb-4">
+                  <FaLightbulb className="mr-2 text-[#00DAFE]" /> Innovación
+                  tecnológica
+                </li>
+                <li className="flex items-center text-lg text-sky-700 mb-4">
+                  <FaEye className="mr-2 text-[#00DAFE]" /> Transparencia en
+                  nuestras operaciones
+                </li>
+                <li className="flex items-center text-lg text-sky-700 mb-4">
+                  <FaHandsHelping className="mr-2 text-[#00DAFE]" />{" "}
+                  Colaboración con refugios y comunidades
+                </li>
+                <li className="flex items-center text-lg text-sky-700 mb-4">
+                  <FaBook className="mr-2 text-[#00DAFE]" /> Educación sobre la
+                  tenencia responsable de mascotas
+                </li>
+              </ul>
+            </div>
+          </section>
 
-        <section className="text-center">
-          <h2 className="text-3xl font-semibold font-semibold text-sky-900 mb-4">
-            ¡Únete a Nuestra Misión!
-          </h2>
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            className="bg-[#00DAFE] text-white font-bold py-2 px-4 rounded"
-          >
-            <Link to="/pets">Explorar Mascotas en Adopción</Link>
-          </motion.button>
-        </section>
-      </main>
-    </div>
+          <section className="mb-12">
+            <h2 className="text-3xl font-semibold text-sky-900 mb-4">
+              Testimonios
+            </h2>
+            <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-lg border-2 border-[#00DAFE] hover:border-[#0097B2] transition duration-300 ease-in-out">
+              <p className="mb-4 italic text-center text-lg text-sky-700 mb-4">
+                "{testimonials[activeTestimonial].text}"
+              </p>
+              <p className="font-semibold text-center text-lg text-sky-700 mb-4">
+                - {testimonials[activeTestimonial].name}
+              </p>
+              <div className="mt-4 flex justify-center space-x-2">
+                {testimonials.map((_, index) => (
+                  <button
+                    key={index}
+                    className={`w-3 h-3 rounded-full ${
+                      index === activeTestimonial
+                        ? "bg-[#00DAFE]"
+                        : "bg-gray-300"
+                    }`}
+                    onClick={() => setActiveTestimonial(index)}
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-semibold font-semibold text-sky-900 mb-4">
+              Compromiso Social
+            </h2>
+            <p className="text-lg text-sky-700 mb-4">
+              Además de facilitar adopciones, trabajamos activamente en
+              programas de educación sobre tenencia responsable de mascotas y
+              colaboramos con refugios locales para mejorar las condiciones de
+              vida de los animales.
+            </p>
+          </section>
+
+          <section className="text-center">
+            <h2 className="text-3xl font-semibold font-semibold text-sky-900 mb-4">
+              ¡Únete a Nuestra Misión!
+            </h2>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="bg-[#00DAFE] text-white font-bold py-2 px-4 rounded"
+            >
+              <Link to="/pets">Explorar Mascotas en Adopción</Link>
+            </motion.button>
+          </section>
+        </main>
+      </div>
+    </>
   );
 }
